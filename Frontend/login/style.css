@@ -1,0 +1,26 @@
+body {
+  font-weight: 600;
+}
+ul {
+  color: #f00000;
+  list-style-type: none;
+}
+
+button {
+  color: aliceblue;
+  background-color: #008;
+  border: none;
+  width: 130px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #ffa500;
+}
+button:hover {
+  background-color: #005;
+}

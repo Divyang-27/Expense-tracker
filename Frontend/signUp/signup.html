@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense-tracker SignUp</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+      integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#" onsubmit="signUp(event)">
+      <label for="name">Enter your name: </label>
+      <input type="text" name="name" id="name" />
+      <label for="mail">Enter your email: </label>
+      <input type="email" name="mail" id="mail" />
+      <label for="password">Enter your password: </label>
+      <input type="password" name="password" id="password" />
+      <button type="submit">Create account</button>
+    </form>
+    <a href="../login/login.html">Existing User? login</a>
+    <ul id="errors"></ul>
+    <script src="signUp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income Expense tracker</title>
+  </head>
+  <body>
+    <div>
+      <form action="#" onsubmit="addExpense(event)">
+        <label for="amount">Choose Expense Amount:</label>
+        <input
+          type="number"
+          name="amount"
+          id="amount"
+          placeholder="Rs."
+          required
+        />
+        <label for="description">Choose Description:</label>
+        <input
+          type="text"
+          id="description"
+          name="description"
+          placeholder="Description"
+          required
+        />
+        <label for="category">Choose a category:</label>
+        <input
+          list="Category"
+          name="category"
+          id="category"
+          placeholder="Category"
+          required
+        />
+        <datalist id="Category">
+          <option value="Fuel">Fuel</option>
+          <option value="Movie">Movie</option>
+          <option value="Hangout">Hangout</option>
+          <option value="Food">Food</option>
+        </datalist>
+        <button type="submit">Add Expense</button>
+      </form>
+    </div>
+    <div id="premium"></div>
+    <div>
+      <h3>Expenses</h3>
+      <ul class="List-group"></ul>
+    </div>
+
+    <div id="leaderboard"></div>
+    <ul id="errors"></ul>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="expense.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+      integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
